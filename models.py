@@ -44,7 +44,7 @@ class NearEarthObject:
                 try:
                     self.designation = str(value)
                 except ValueError:
-                    print(f'Ah, the type of this {key} is not a string')
+                    print(f'The type of this {key} is not a string')
                     
                     
             elif key.lower() == 'name':
@@ -52,7 +52,7 @@ class NearEarthObject:
                     try:
                         self.name = str(value)
                     except ValueError:
-                        print(f'Oh Dear, the type of this {key} is not a string')
+                        print(f'The type of this {key} is not a string')
                 else:
                     self.name = None
  
@@ -142,20 +142,20 @@ class CloseApproach:
                 try:
                     self._designation = str(value)
                 except ValueError:
-                    print(f'Oh no! The type of {key} just isn\'t a string!')
+                    print(f'The type of {key} isn\'t a string!')
             
             elif key.lower() == 'cd':
                 try:
                     self.time = str(value)
                     self.time = cd_to_datetime(self.time)
                 except ValueError:
-                    print(f'Oh dear! The type of {key} just isn\'t a string!')
+                    print(f'The type of {key} isn\'t a string!')
         
             elif key.lower() == 'dist':
                 try: 
                     self.distance = float(value)
                 except ValueError:
-                    print(f'Oh, the type of {key} is not a float!')
+                    print(f'The type of {key} is not a float!')
             
             elif key.lower() == 'v_rel':
                 try:
@@ -201,7 +201,7 @@ class CloseApproach:
 
     def __str__(self):
         """Return `str(self)`."""
-        return f"A CloseApproach, happening by at {self.time_str}, and going by the name of {neo.fullname}, will mosey on by at a distance of {self.distance} au and has the velocity of {self.velocity} km/s."
+        return f"A CloseApproach, happening at {self.time_str}, and going by the name of {neo.fullname}, will approach at a distance of {self.distance} au and has the velocity of {self.velocity} km/s."
 
     def __repr__(self):
         """Return `repr(self)`, a computer-readable string representation of this object."""
