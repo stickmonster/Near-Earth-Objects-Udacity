@@ -1,5 +1,10 @@
 # Explore Close Approaches of Near-Earth Objects
 
+The below is the ReadMe provided by Udacity for this project. It is a little verbose.  In short, the program extracts information from NASA data in comma-seperated-value files and in json files. The information is streamlined by a modelling process which uses several helper functions and models.py in order to make sure the data is in a form which is readable for the later querying process. It is then stored in database.py. When a query is made (either via tests or the command line) this originates in main, and then passes through the filters. The results are then written back into csv and json files.
+
+Please see below for more details...
+
+
 In this project, you'll use Python - and the skills we've developed throughout this course - to search for and explore close approaches of near-Earth objects (NEOs), using data from NASA/JPL's Center for Near Earth Object Studies.
 
 When you're finished, it'll look like this:
