@@ -71,7 +71,7 @@ class AttributeFilter:
         raise UnsupportedCriterionError
 
     def __repr__(self):
-        """Machine readable comparisson of atributes within the ten filters methods."""
+        """Machine readable comparisson of attributes within the ten filter methods."""
         return f"{self.__class__.__name__}(op=operator.{self.op.__name__}," 
         "value={self.value})"
 
